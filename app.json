@@ -1,0 +1,31 @@
+{
+  "name": "ANUWH-MD",
+  "description": "Anuwh MD WhatsApp bot made using Javascript by Anuga Senithu De Silva. ",
+  "logo": "https://postimg.cc/hhNnXtQ0",
+  "keywords": ["AnuwhMD"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "ALIVE_IMG": {
+      "description": "Put your alive img here.",
+      "required": true
+    },
+    
+    "ALIVE_MSG": {
+      "description": "Put your alive msg here.",
+      "required": true
+    }   
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
